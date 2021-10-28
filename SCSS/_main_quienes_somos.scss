@@ -1,0 +1,35 @@
+.quienes_somos{
+    section{
+        .presentacion{
+            font-family: $Tipografia_texto;
+            margin-left: 7%;
+            color: $Color_Claro2;
+            font-size: 80px;
+        }
+        .parrafos{
+            margin-left: 7%;
+            font-family: $Tipografia_texto;
+            color: $Color_Oscuro;
+            font-size: 20px;
+        }
+    }
+    .subtitulos{
+        font-family: $Tipografia_texto;
+        color: $Color_Oscuro;
+        font-size: 50px;
+        margin-left: 7%;
+    }
+    .video{
+        margin: 20px;
+    }
+    .videosPresentacion{
+        background-image: radial-gradient($Color_Oscuro, $Color_Claro1);
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+
+}

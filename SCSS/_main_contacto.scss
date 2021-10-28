@@ -1,0 +1,29 @@
+.main_contacto{
+    .transition_expand{
+        font-family: $Tipografia_texto;
+        color: $Color_Claro2;
+        font-size: 50px;
+        margin-left: 7%;
+        transition: all 2s ease;
+    }
+    .transition_expand:hover{
+        font-size: 80px;
+    }
+    .contacto{
+        fieldset{
+            width: 80%;
+            margin-left: 7%;
+            font-family: $Tipografia_texto;
+            color: $Color_Oscuro;
+            border-width: 2px;
+            border-style: groove;
+            border-color: black;
+            border-image: initial;
+            
+        
+        }
+        .formulario{
+            padding:20px
+        }
+    }
+}

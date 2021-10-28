@@ -1,0 +1,66 @@
+.main_tienda{
+    .centrados{
+        font-family: $Tipografia_texto;
+        font-size: 50px;
+        color: $Color_Claro2;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    .transition_expand{
+        font-family: $Tipografia_texto;
+        color: $Color_Claro2;
+        font-size: 50px;
+        margin: 20px;
+        transition: all 2s ease;
+    }
+    .transition_expand:hover{
+        font-size: 80px;
+    }
+    .containerCards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 20% auto;
+        padding: 2%;
+        margin: 20px;
+    
+        .card{
+            font-family: $Tipografia_texto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: stretch;
+            height: 80%;
+            width: 80%;
+            margin: 2%;
+            border-style: solid 2px black;
+            .card-body{
+                color: $Color_Oscuro;
+                font-family: $Tipografia_texto;
+                .btn{
+                    color: white;
+                background-color: $Color_Oscuro;
+                }
+                .btn a{
+                    color: $Color_Claro2;;
+                }
+            }
+        }
+    }
+    
+    h2{
+        .transition_expand{
+            font-family: $Tipografia_texto;
+            color: $Color_Claro2;
+            font-size: 50px;
+            margin-left: 7%;
+            transition: all 2s ease;
+        }
+        .transition_expand:hover{
+            font-size: 80px;
+        }
+    }
+    .table{
+        margin-left: 7%;
+    }
+}

@@ -1,0 +1,65 @@
+.main_home{
+    .imagenPrincipal{
+        background-image: url(/img/fondoDeCafe.jpg);
+        background-repeat: cover;
+    }
+    .centrados{
+        font-family: $Tipografia_texto;
+        font-size: 50px;
+        color: $Color_Claro2;                                            
+        text-align: center;
+        margin: 20px;
+        transition: all 2s ease;
+    }
+    .subtitulos{
+        font-family: $Tipografia_texto;
+        color:$Color_Claro2;
+        font-size: 50px;
+        margin-left: 7%;
+    }           
+    .parrafos{
+        width: 84%;
+        margin-left: 7%;
+        font-family: $Tipografia_texto;
+        color: $Color_Oscuro;
+        font-size: 20px;
+    }
+    .containerCards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 20% auto;
+        padding: 2%;
+        margin: 20px;
+    }
+    .card{
+        font-family: $Tipografia_texto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        height: 80%;
+        width: 80%;
+        margin: 2%;
+        border-style: solid 2px black;
+    }
+    .card-body{
+        color: $Color_Oscuro;
+        font-family: $Tipografia_texto;
+    }
+    .btn{
+        color: white;
+       background-color: $Color_Oscuro;
+    }
+    .btn a{
+        color: $Color_Claro2;;
+    }
+    .lista{
+        color: $Color_Oscuro;
+        margin-left: 7%;
+    }
+    .lista li{
+        list-style-position: outside;
+        padding: 1%;
+    }
+}

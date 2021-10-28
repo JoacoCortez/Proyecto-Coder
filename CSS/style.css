@@ -1,0 +1,306 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+body {
+  background: #F5E8C7; }
+
+header #prueba {
+  background-color: #DEBA9D; }
+  header #prueba nav .logo {
+    width: 300px;
+    margin-left: 5%; }
+  header #prueba nav .menuHamburguesa {
+    background-color: #DEBA9D;
+    color: #9E7777; }
+  header #prueba nav .menuNav {
+    font-family: "Scheherazade New", serif;
+    font-size: 20px;
+    padding-left: 340px; }
+  header #prueba nav li a {
+    font-family: "Scheherazade New", serif;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #9E7777;
+    padding: 20px;
+    transition: all .3s ease; }
+    header #prueba nav li a li a:hover {
+      background-color: #F5E8C7;
+      cursor: pointer; }
+
+.main_home .imagenPrincipal {
+  background-image: url(/img/fondoDeCafe.jpg);
+  background-repeat: cover; }
+
+.main_home .centrados {
+  font-family: "Scheherazade New", serif;
+  font-size: 50px;
+  color: #DEBA9D;
+  text-align: center;
+  margin: 20px;
+  transition: all 2s ease; }
+
+.main_home .subtitulos {
+  font-family: "Scheherazade New", serif;
+  color: #DEBA9D;
+  font-size: 50px;
+  margin-left: 7%; }
+
+.main_home .parrafos {
+  width: 84%;
+  margin-left: 7%;
+  font-family: "Scheherazade New", serif;
+  color: #9E7777;
+  font-size: 20px; }
+
+.main_home .containerCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 20% auto;
+  padding: 2%;
+  margin: 20px; }
+
+.main_home .card {
+  font-family: "Scheherazade New", serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  height: 80%;
+  width: 80%;
+  margin: 2%;
+  border-style: solid 2px black; }
+
+.main_home .card-body {
+  color: #9E7777;
+  font-family: "Scheherazade New", serif; }
+
+.main_home .btn {
+  color: white;
+  background-color: #9E7777; }
+
+.main_home .btn a {
+  color: #DEBA9D; }
+
+.main_home .lista {
+  color: #9E7777;
+  margin-left: 7%; }
+
+.main_home .lista li {
+  list-style-position: outside;
+  padding: 1%; }
+
+.main_tienda .centrados {
+  font-family: "Scheherazade New", serif;
+  font-size: 50px;
+  color: #DEBA9D;
+  text-align: center;
+  margin-bottom: 10%; }
+
+.main_tienda .transition_expand {
+  font-family: "Scheherazade New", serif;
+  color: #DEBA9D;
+  font-size: 50px;
+  margin: 20px;
+  transition: all 2s ease; }
+
+.main_tienda .transition_expand:hover {
+  font-size: 80px; }
+
+.main_tienda .containerCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 20% auto;
+  padding: 2%;
+  margin: 20px; }
+  .main_tienda .containerCards .card {
+    font-family: "Scheherazade New", serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: 80%;
+    width: 80%;
+    margin: 2%;
+    border-style: solid 2px black; }
+    .main_tienda .containerCards .card .card-body {
+      color: #9E7777;
+      font-family: "Scheherazade New", serif; }
+      .main_tienda .containerCards .card .card-body .btn {
+        color: white;
+        background-color: #9E7777; }
+      .main_tienda .containerCards .card .card-body .btn a {
+        color: #DEBA9D; }
+
+.main_tienda h2 .transition_expand {
+  font-family: "Scheherazade New", serif;
+  color: #DEBA9D;
+  font-size: 50px;
+  margin-left: 7%;
+  transition: all 2s ease; }
+
+.main_tienda h2 .transition_expand:hover {
+  font-size: 80px; }
+
+.main_tienda .table {
+  margin-left: 7%; }
+
+.quienes_somos section .presentacion {
+  font-family: "Scheherazade New", serif;
+  margin-left: 7%;
+  color: #DEBA9D;
+  font-size: 80px; }
+
+.quienes_somos section .parrafos {
+  margin-left: 7%;
+  font-family: "Scheherazade New", serif;
+  color: #9E7777;
+  font-size: 20px; }
+
+.quienes_somos .subtitulos {
+  font-family: "Scheherazade New", serif;
+  color: #9E7777;
+  font-size: 50px;
+  margin-left: 7%; }
+
+.quienes_somos .video {
+  margin: 20px; }
+
+.quienes_somos .videosPresentacion {
+  background-image: radial-gradient(#9E7777, #F5E8C7);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around; }
+
+.main_contacto .transition_expand {
+  font-family: "Scheherazade New", serif;
+  color: #DEBA9D;
+  font-size: 50px;
+  margin-left: 7%;
+  transition: all 2s ease; }
+
+.main_contacto .transition_expand:hover {
+  font-size: 80px; }
+
+.main_contacto .contacto fieldset {
+  width: 80%;
+  margin-left: 7%;
+  font-family: "Scheherazade New", serif;
+  color: #9E7777;
+  border-width: 2px;
+  border-style: groove;
+  border-color: black;
+  border-image: initial; }
+
+.main_contacto .contacto .formulario {
+  padding: 20px; }
+
+footer .texto_footer {
+  font-family: "Scheherazade New", serif;
+  font-size: 20px;
+  color: #9E7777;
+  margin-left: 7%; }
+
+footer .subtitulos {
+  font-family: "Scheherazade New", serif;
+  color: #DEBA9D;
+  font-size: 30px;
+  margin-left: 7%; }
+
+footer .parrafos {
+  margin-left: 7%;
+  font-family: "Scheherazade New", serif;
+  color: #9E7777;
+  font-size: 20px; }
+
+footer .redesSociales {
+  padding: 20px; }
+
+footer .redesSociales a {
+  color: black;
+  text-decoration: none;
+  padding: 10px; }
+
+@media only screen and (max-width: 576px) {
+  .parrafos {
+    font-size: 10px;
+    margin: 1rem; }
+  .centrados {
+    font-size: 32px;
+    margin: 1rem; }
+  em {
+    font-size: 28px; }
+  .logo {
+    width: 30vh;
+    margin: 1rem; }
+  .presentacion {
+    font-size: 3rem; }
+  .videosPresentacion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+  .containerCards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80% auto;
+    padding: 2%;
+    margin: 20px; }
+  .card {
+    font-family: "Scheherazade New", serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: 80%;
+    width: 80%;
+    margin: 2%;
+    border-style: solid 2px black; }
+  .productos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+  .productos div img {
+    display: flex;
+    flex-direction: column; }
+  .productosTienda {
+    width: 40%;
+    height: 50%; } }
+
+@media only screen and (max-width: 780px) {
+  .parrafos {
+    font-size: 18px;
+    margin: 1rem; }
+  .centrados {
+    font-size: 34px;
+    margin: 1rem; }
+  em {
+    font-size: 26px; }
+  .logo {
+    width: 35vh;
+    margin: 1rem; }
+  .containerCards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80% auto;
+    padding: 2%;
+    margin: 20px; }
+  .card {
+    font-family: "Scheherazade New", serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: 80%;
+    width: 80%;
+    margin: 2%;
+    border-style: solid 2px black; } }
