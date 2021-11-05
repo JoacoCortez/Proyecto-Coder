@@ -1,10 +1,10 @@
 .quienes_somos{
     section{
         .presentacion{
-            font-family: $Tipografia_texto;
+            font-family: $Tipografia_titulos;
             margin-left: 7%;
             color: $Color_Claro2;
-            font-size: 80px;
+            font-size: 110px;
         }
         .parrafos{
             margin-left: 7%;
@@ -14,21 +14,22 @@
         }
     }
     .subtitulos{
-        font-family: $Tipografia_texto;
+        font-family: $Tipografia_titulos;
         color: $Color_Oscuro;
-        font-size: 50px;
+        font-size: 80px;
         margin-left: 7%;
     }
-    .video{
-        margin: 20px;
-    }
     .videosPresentacion{
-        background-image: radial-gradient($Color_Oscuro, $Color_Claro1);
         width: 100%;
+        background-image: url(/img/medialuna.jpg);
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
+        .video{
+            margin: 20px;
+        }
+    
     }
 
 

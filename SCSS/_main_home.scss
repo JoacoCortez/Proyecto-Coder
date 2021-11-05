@@ -1,65 +1,87 @@
 .main_home{
-    .imagenPrincipal{
-        background-image: url(/img/fondoDeCafe.jpg);
-        background-repeat: cover;
+    .fondo_principal{
+        width: 100%;
+        height: 100vh;
+        background-image: url(/img/breakfast.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        .centrados{
+            font-family: $Tipografia_titulos;
+            font-size: 100px;
+            color: $Color_Claro2;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        h6{
+            font-family: $Tipografia_texto;
+            font-size: 30px;
+            color: $Color_Oscuro;
+            text-align: center;
+            margin: 2px;
+        }
+        .parrafos_principal{
+            margin-left: 7%;
+            font-family: $Tipografia_texto;
+            color: $Color_Oscuro;
+            font-size: 20px;
+            padding-top: 80px;
+            align-items: center;
+        }
     }
-    .centrados{
-        font-family: $Tipografia_texto;
-        font-size: 50px;
-        color: $Color_Claro2;                                            
-        text-align: center;
-        margin: 20px;
-        transition: all 2s ease;
-    }
-    .subtitulos{
-        font-family: $Tipografia_texto;
-        color:$Color_Claro2;
-        font-size: 50px;
-        margin-left: 7%;
-    }           
     .parrafos{
-        width: 84%;
         margin-left: 7%;
         font-family: $Tipografia_texto;
         color: $Color_Oscuro;
         font-size: 20px;
     }
-    .containerCards{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        width: 20% auto;
-        padding: 2%;
-        margin: 20px;
+    .background_cards{
+        h3{
+            font-family: $Tipografia_titulos;
+            font-size: 80px;
+            color: $Color_Claro2;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .containerCards{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: 20% auto;
+            padding: 2%;
+            margin: 20px;
+        }
+        .card{
+            font-family: $Tipografia_texto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: stretch;
+            height: 80%;
+            width: 80%;
+            margin: 2%;
+            border: groove 1px black;
+        }
+        .card-body{
+            color: $Color_Oscuro;
+            font-family: $Tipografia_texto;
+            border: ridge 1px grey;
+        }
+        .btn{
+            color: white;
+        background-color: $Color_Oscuro;
+        }
+        .btn a{
+            color: $Color_Claro2;;
+        }
     }
-    .card{
-        font-family: $Tipografia_texto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: stretch;
-        height: 80%;
-        width: 80%;
-        margin: 2%;
-        border-style: solid 2px black;
+    .objetivos{
+        h2{
+            font-family: $Tipografia_titulos;
+            color:$Color_Claro2;
+            font-size: 90px;
+            margin-left: 7%;
+            margin-bottom: 25px;
+        }
     }
-    .card-body{
-        color: $Color_Oscuro;
-        font-family: $Tipografia_texto;
-    }
-    .btn{
-        color: white;
-       background-color: $Color_Oscuro;
-    }
-    .btn a{
-        color: $Color_Claro2;;
-    }
-    .lista{
-        color: $Color_Oscuro;
-        margin-left: 7%;
-    }
-    .lista li{
-        list-style-position: outside;
-        padding: 1%;
-    }
-}
+}  
+

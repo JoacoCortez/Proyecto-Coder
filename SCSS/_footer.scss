@@ -1,28 +1,22 @@
 footer{
-    .texto_footer{
-        font-family: $Tipografia_texto;
-        font-size: 20px;
-        color: $Color_Oscuro;
-        margin-left: 7%;
-    }
-    .subtitulos{
-        font-family: $Tipografia_texto;
-        color: $Color_Claro2;
-        font-size: 30px;
-        margin-left: 7%;
-    }
-    .parrafos{
-        margin-left: 7%;
-        font-family: $Tipografia_texto;
-        color: $Color_Oscuro;
-        font-size: 20px;
-    }
-    .redesSociales{
-        padding:20px
-    }
-    .redesSociales a{
-        color:black;
-        text-decoration: none;
-        padding: 10px;
+    .background_footer{
+        .titulo_footer{
+            font-family: $Tipografia_texto;
+            font-size: 24px;
+            color: $Color_Oscuro;
+            margin-left: 7%;
+            padding-top: 20px;
+            
+        }
+        .texto_footer{
+            font-family: $Tipografia_texto;
+            font-size: 18px;
+            color: $Color_Oscuro;
+            margin-left: 7%;
+            line-height: 1rem;
+            
+            
+            
+        }
     }
 }

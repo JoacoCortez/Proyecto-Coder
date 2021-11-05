@@ -1,7 +1,9 @@
 $Color_Claro1: #F5E8C7 ;
 $Color_Claro2: #DEBA9D ;
 $Color_Oscuro: #9E7777 ;
-$Tipografia_texto: 'Scheherazade New', serif;
+$Tipografia_texto: 'Roboto Slab', serif;
+$Tipografia_titulos: 'Tangerine', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Tangerine:wght@700&display=swap');
 @import "body";
 @import "header";
 @import "main_home";

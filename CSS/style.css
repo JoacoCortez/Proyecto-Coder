@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Tangerine:wght@700&display=swap");
 * {
   margin: 0%;
   padding: 0%;
@@ -6,56 +7,74 @@
 body {
   background: #F5E8C7; }
 
-header #prueba {
+header #menu {
   background-color: #DEBA9D; }
-  header #prueba nav .logo {
+  header #menu nav .logo {
     width: 300px;
     margin-left: 5%; }
-  header #prueba nav .menuHamburguesa {
-    background-color: #DEBA9D;
-    color: #9E7777; }
-  header #prueba nav .menuNav {
-    font-family: "Scheherazade New", serif;
+  header #menu nav .menuNav {
+    font-family: "Roboto Slab", serif;
     font-size: 20px;
-    padding-left: 340px; }
-  header #prueba nav li a {
-    font-family: "Scheherazade New", serif;
-    display: inline-block;
+    margin-left: 340px; }
+  header #menu nav .nav-item {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px; }
+  header #menu nav .nav-link {
+    font-family: "Roboto Slab", serif;
     font-size: 20px;
     text-decoration: none;
     color: #9E7777;
-    padding: 20px;
+    padding-right: 20px;
     transition: all .3s ease; }
-    header #prueba nav li a li a:hover {
+    header #menu nav .nav-link .nav-link:hover {
       background-color: #F5E8C7;
       cursor: pointer; }
 
-.main_home .imagenPrincipal {
-  background-image: url(/img/fondoDeCafe.jpg);
-  background-repeat: cover; }
-
-.main_home .centrados {
-  font-family: "Scheherazade New", serif;
-  font-size: 50px;
-  color: #DEBA9D;
-  text-align: center;
-  margin: 20px;
-  transition: all 2s ease; }
-
-.main_home .subtitulos {
-  font-family: "Scheherazade New", serif;
-  color: #DEBA9D;
-  font-size: 50px;
-  margin-left: 7%; }
+.main_home .fondo_principal {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/img/breakfast.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .main_home .fondo_principal .centrados {
+    font-family: "Tangerine", cursive;
+    font-size: 100px;
+    color: #DEBA9D;
+    text-align: center;
+    margin-bottom: 5px; }
+  .main_home .fondo_principal h6 {
+    font-family: "Roboto Slab", serif;
+    font-size: 30px;
+    color: #9E7777;
+    text-align: center;
+    margin: 2px; }
+  .main_home .fondo_principal .parrafos_principal {
+    margin-left: 7%;
+    font-family: "Roboto Slab", serif;
+    color: #9E7777;
+    font-size: 20px;
+    padding-top: 80px;
+    align-items: center; }
 
 .main_home .parrafos {
-  width: 84%;
   margin-left: 7%;
-  font-family: "Scheherazade New", serif;
+  font-family: "Roboto Slab", serif;
   color: #9E7777;
   font-size: 20px; }
 
-.main_home .containerCards {
+.main_home .background_cards h3 {
+  font-family: "Tangerine", cursive;
+  font-size: 80px;
+  color: #DEBA9D;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.main_home .background_cards .containerCards {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -63,8 +82,8 @@ header #prueba {
   padding: 2%;
   margin: 20px; }
 
-.main_home .card {
-  font-family: "Scheherazade New", serif;
+.main_home .background_cards .card {
+  font-family: "Roboto Slab", serif;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -72,43 +91,37 @@ header #prueba {
   height: 80%;
   width: 80%;
   margin: 2%;
-  border-style: solid 2px black; }
+  border: groove 1px black; }
 
-.main_home .card-body {
+.main_home .background_cards .card-body {
   color: #9E7777;
-  font-family: "Scheherazade New", serif; }
+  font-family: "Roboto Slab", serif;
+  border: ridge 1px grey; }
 
-.main_home .btn {
+.main_home .background_cards .btn {
   color: white;
   background-color: #9E7777; }
 
-.main_home .btn a {
+.main_home .background_cards .btn a {
   color: #DEBA9D; }
 
-.main_home .lista {
-  color: #9E7777;
-  margin-left: 7%; }
-
-.main_home .lista li {
-  list-style-position: outside;
-  padding: 1%; }
-
-.main_tienda .centrados {
-  font-family: "Scheherazade New", serif;
-  font-size: 50px;
+.main_home .objetivos h2 {
+  font-family: "Tangerine", cursive;
   color: #DEBA9D;
-  text-align: center;
-  margin-bottom: 10%; }
+  font-size: 90px;
+  margin-left: 7%;
+  margin-bottom: 25px; }
 
 .main_tienda .transition_expand {
-  font-family: "Scheherazade New", serif;
+  font-family: "Tangerine", cursive;
   color: #DEBA9D;
-  font-size: 50px;
-  margin: 20px;
+  font-size: 80px;
+  padding: 15px;
+  margin-left: 7%;
   transition: all 2s ease; }
 
 .main_tienda .transition_expand:hover {
-  font-size: 80px; }
+  font-size: 120px; }
 
 .main_tienda .containerCards {
   display: flex;
@@ -118,7 +131,7 @@ header #prueba {
   padding: 2%;
   margin: 20px; }
   .main_tienda .containerCards .card {
-    font-family: "Scheherazade New", serif;
+    font-family: "Roboto Slab", serif;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -126,181 +139,373 @@ header #prueba {
     height: 80%;
     width: 80%;
     margin: 2%;
-    border-style: solid 2px black; }
+    border: groove 1px black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     .main_tienda .containerCards .card .card-body {
       color: #9E7777;
-      font-family: "Scheherazade New", serif; }
+      font-family: "Roboto Slab", serif;
+      border: ridge 1px grey; }
       .main_tienda .containerCards .card .card-body .btn {
         color: white;
         background-color: #9E7777; }
-      .main_tienda .containerCards .card .card-body .btn a {
-        color: #DEBA9D; }
+      .main_tienda .containerCards .card .card-body .btn:hover {
+        color: #F5E8C7; }
 
 .main_tienda h2 .transition_expand {
-  font-family: "Scheherazade New", serif;
+  display: block;
+  font-family: "Tangerine", cursive;
   color: #DEBA9D;
-  font-size: 50px;
+  font-size: 80px;
   margin-left: 7%;
   transition: all 2s ease; }
 
 .main_tienda h2 .transition_expand:hover {
-  font-size: 80px; }
+  font-size: 120px; }
 
-.main_tienda .table {
+.main_tienda .envios h4 {
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  color: #9E7777;
+  font-size: 25px;
   margin-left: 7%; }
 
+.main_tienda .envios .parrafo_envios {
+  width: 88%;
+  margin-left: 7%;
+  font-family: "Roboto Slab", serif;
+  color: #9E7777;
+  font-size: 20px; }
+
+.main_tienda .envios input {
+  padding: 5px;
+  margin-left: 7%;
+  border-radius: 20px;
+  border-color: #9E7777; }
+
 .quienes_somos section .presentacion {
-  font-family: "Scheherazade New", serif;
+  font-family: "Tangerine", cursive;
   margin-left: 7%;
   color: #DEBA9D;
-  font-size: 80px; }
+  font-size: 110px; }
 
 .quienes_somos section .parrafos {
   margin-left: 7%;
-  font-family: "Scheherazade New", serif;
+  font-family: "Roboto Slab", serif;
   color: #9E7777;
   font-size: 20px; }
 
 .quienes_somos .subtitulos {
-  font-family: "Scheherazade New", serif;
+  font-family: "Tangerine", cursive;
   color: #9E7777;
-  font-size: 50px;
+  font-size: 80px;
   margin-left: 7%; }
 
-.quienes_somos .video {
-  margin: 20px; }
-
 .quienes_somos .videosPresentacion {
-  background-image: radial-gradient(#9E7777, #F5E8C7);
   width: 100%;
+  background-image: url(/img/medialuna.jpg);
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around; }
+  .quienes_somos .videosPresentacion .video {
+    margin: 20px; }
 
 .main_contacto .transition_expand {
-  font-family: "Scheherazade New", serif;
+  font-family: "Tangerine", cursive;
   color: #DEBA9D;
-  font-size: 50px;
+  font-size: 90px;
   margin-left: 7%;
   transition: all 2s ease; }
 
 .main_contacto .transition_expand:hover {
-  font-size: 80px; }
+  font-size: 120px; }
 
 .main_contacto .contacto fieldset {
   width: 80%;
   margin-left: 7%;
-  font-family: "Scheherazade New", serif;
+  font-family: "Roboto Slab", serif;
   color: #9E7777;
-  border-width: 2px;
-  border-style: groove;
-  border-color: black;
-  border-image: initial; }
+  border: 2px, groove, black; }
 
 .main_contacto .contacto .formulario {
   padding: 20px; }
 
-footer .texto_footer {
-  font-family: "Scheherazade New", serif;
-  font-size: 20px;
+footer .background_footer .titulo_footer {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
   color: #9E7777;
-  margin-left: 7%; }
-
-footer .subtitulos {
-  font-family: "Scheherazade New", serif;
-  color: #DEBA9D;
-  font-size: 30px;
-  margin-left: 7%; }
-
-footer .parrafos {
   margin-left: 7%;
-  font-family: "Scheherazade New", serif;
+  padding-top: 20px; }
+
+footer .background_footer .texto_footer {
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
   color: #9E7777;
-  font-size: 20px; }
-
-footer .redesSociales {
-  padding: 20px; }
-
-footer .redesSociales a {
-  color: black;
-  text-decoration: none;
-  padding: 10px; }
+  margin-left: 7%;
+  line-height: 1rem; }
 
 @media only screen and (max-width: 576px) {
-  .parrafos {
-    font-size: 10px;
-    margin: 1rem; }
-  .centrados {
-    font-size: 32px;
-    margin: 1rem; }
-  em {
-    font-size: 28px; }
-  .logo {
+  header #menu nav .logo {
     width: 30vh;
-    margin: 1rem; }
-  .presentacion {
-    font-size: 3rem; }
-  .videosPresentacion {
+    margin-left: 5%; }
+  header #menu nav .menuNav {
+    font-size: 14px;
+    margin-left: 340px; }
+  header #menu nav .nav-item {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px; }
+  header #menu nav .nav-link {
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+    padding-right: 20px;
+    transition: all .3s ease; }
+  .main_home .fondo_principal {
+    width: 100%;
+    height: 10vh;
+    background-image: url(/img/breakfast.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .main_home .centrados {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px; }
+  .main_home .subtitulos {
+    font-size: 32px;
+    margin-left: 7%; }
+  .main_home .parrafos {
+    margin-left: 7%;
+    font-size: 10px; }
+  .main_home .background_cards h3 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px; }
+  .main_home .background_cards .containerCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 20% auto;
+    padding: 2%;
+    margin: 15px; }
+  .main_home .background_cards .card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: 80%;
+    width: 80%;
+    margin: 2%; }
+  .main_home .objetivos h2 {
+    font-size: 32px;
+    margin-left: 7%;
+    margin-bottom: 15px; }
+  .main_tienda .centrados {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 6%; }
+  .main_tienda .transition_expand {
+    font-size: 32px;
+    margin-left: 7%;
+    transition: all 2s ease; }
+  .main_tienda .transition_expand:hover {
+    font-size: 44px; }
+  .main_tienda .containerCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 20% auto;
+    padding: 2%;
+    margin: 20px; }
+    .main_tienda .containerCards .card {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: stretch;
+      height: 80%;
+      width: 80%;
+      margin: 2%;
+      border-style: solid 1px black; }
+  .main_tienda h2 .transition_expand {
+    display: block;
+    font-size: 32px;
+    margin-left: 7%;
+    transition: all 2s ease; }
+  .main_tienda h2 .transition_expand:hover {
+    font-size: 44px; }
+  .quienes_somos section .presentacion {
+    margin-left: 7%;
+    font-size: 36px; }
+  .quienes_somos section .parrafos {
+    margin-left: 7%;
+    font-size: 10px; }
+  .quienes_somos .subtitulos {
+    font-size: 32px;
+    margin-left: 7%; }
+  .quienes_somos .video {
+    margin: 20px; }
+  .quienes_somos .videosPresentacion {
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap; }
-  .containerCards {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 80% auto;
-    padding: 2%;
-    margin: 20px; }
-  .card {
-    font-family: "Scheherazade New", serif;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    height: 80%;
+  .main_contacto .transition_expand {
+    font-size: 32px;
+    margin-left: 7%;
+    transition: all 2s ease; }
+  .main_contacto .transition_expand:hover {
+    font-size: 36px; }
+  .main_contacto .contacto fieldset {
     width: 80%;
-    margin: 2%;
-    border-style: solid 2px black; }
-  .productos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start; }
-  .productos div img {
-    display: flex;
-    flex-direction: column; }
-  .productosTienda {
-    width: 40%;
-    height: 50%; } }
+    margin-left: 7%;
+    border-width: 2px;
+    border-style: groove;
+    border-color: black;
+    border-image: initial; }
+  .main_contacto .contacto .formulario {
+    padding: 20px; }
+  footer {
+    height: 16vh; }
+    footer .background_footer .titulo_footer {
+      font-size: 18px;
+      margin-left: 7%;
+      padding-top: 20px; }
+    footer .background_footer .texto_footer {
+      font-size: 10px;
+      margin-left: 7%;
+      line-height: 1rem; } }
 
 @media only screen and (max-width: 780px) {
-  .parrafos {
-    font-size: 18px;
-    margin: 1rem; }
-  .centrados {
-    font-size: 34px;
-    margin: 1rem; }
-  em {
-    font-size: 26px; }
-  .logo {
-    width: 35vh;
-    margin: 1rem; }
-  .containerCards {
+  header #menu nav .logo {
+    width: 30vh;
+    margin-left: 5%; }
+  header #menu nav .menuNav {
+    font-size: 10px;
+    margin-left: 340px; }
+  header #menu nav .nav-item {
+    width: 30%;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 80% auto;
-    padding: 2%;
-    margin: 20px; }
-  .card {
-    font-family: "Scheherazade New", serif;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px; }
+  header #menu nav .nav-link {
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+    padding-right: 20px;
+    transition: all .3s ease; }
+  .main_home .fondo_principal {
+    width: 100%;
+    height: 70vh;
+    background-image: url(/img/breakfast.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .main_home .centrados {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px; }
+  .main_home .subtitulos {
+    font-size: 28px;
+    margin-left: 7%; }
+  .main_home .parrafos {
+    margin-left: 7%;
+    font-size: 16px;
+    position: relative; }
+  .main_home .background_cards h3 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px; }
+  .main_home .background_cards .containerCards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: stretch;
+    padding: 2%;
+    margin: 18px; }
+  .main_home .background_cards .card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     height: 80%;
     width: 80%;
-    margin: 2%;
-    border-style: solid 2px black; } }
+    margin: 2%; }
+  .main_home .objetivos h2 {
+    font-size: 28px;
+    margin-left: 7%;
+    margin-bottom: 10px; }
+  .main_tienda .centrados {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 6%; }
+  .main_tienda .transition_expand {
+    font-size: 32px;
+    margin-left: 7%;
+    transition: all 2s ease; }
+  .main_tienda .transition_expand:hover {
+    font-size: 36px; }
+  .main_tienda .containerCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 20% auto;
+    padding: 2%;
+    margin: 20px; }
+    .main_tienda .containerCards .card {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 80%;
+      width: 80%;
+      margin: 2%;
+      border-style: solid 1px black; }
+  .main_tienda h2 .transition_expand {
+    display: block;
+    font-size: 32px;
+    margin-left: 7%;
+    transition: all 2s ease; }
+  .main_tienda h2 .transition_expand:hover {
+    font-size: 44px; }
+  .quienes_somos section .presentacion {
+    margin-left: 7%;
+    font-size: 36px; }
+  .quienes_somos section .parrafos {
+    margin-left: 7%;
+    font-size: 10px; }
+  .quienes_somos .subtitulos {
+    font-size: 32px;
+    margin-left: 7%; }
+  .quienes_somos .video {
+    margin: 20px; }
+  .quienes_somos .videosPresentacion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+  .main_contacto .transition_expand {
+    font-size: 32px;
+    margin-left: 7%;
+    transition: all 2s ease; }
+  .main_contacto .transition_expand:hover {
+    font-size: 36px; }
+  .main_contacto .contacto fieldset {
+    width: 80%;
+    margin-left: 7%;
+    border-width: 2px;
+    border-style: groove;
+    border-color: black;
+    border-image: initial; }
+  .main_contacto .contacto .formulario {
+    padding: 20px; }
+  footer {
+    height: 16vh; }
+    footer .background_footer .titulo_footer {
+      font-size: 18px;
+      margin-left: 7%;
+      padding-top: 20px; }
+    footer .background_footer .texto_footer {
+      font-size: 10px;
+      margin-left: 7%;
+      line-height: 1rem; } }

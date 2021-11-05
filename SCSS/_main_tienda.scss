@@ -1,20 +1,14 @@
 .main_tienda{
-    .centrados{
-        font-family: $Tipografia_texto;
-        font-size: 50px;
-        color: $Color_Claro2;
-        text-align: center;
-        margin-bottom: 10%;
-    }
     .transition_expand{
-        font-family: $Tipografia_texto;
+        font-family: $Tipografia_titulos;
         color: $Color_Claro2;
-        font-size: 50px;
-        margin: 20px;
+        font-size: 80px;
+        padding: 15px;
+        margin-left: 7%;
         transition: all 2s ease;
     }
     .transition_expand:hover{
-        font-size: 80px;
+        font-size: 120px;
     }
     .containerCards{
         display: flex;
@@ -23,7 +17,6 @@
         width: 20% auto;
         padding: 2%;
         margin: 20px;
-    
         .card{
             font-family: $Tipografia_texto;
             display: flex;
@@ -33,16 +26,18 @@
             height: 80%;
             width: 80%;
             margin: 2%;
-            border-style: solid 2px black;
+            border: groove 1px black;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             .card-body{
                 color: $Color_Oscuro;
                 font-family: $Tipografia_texto;
+                border: ridge 1px grey;
                 .btn{
                     color: white;
-                background-color: $Color_Oscuro;
+                    background-color: $Color_Oscuro;
                 }
-                .btn a{
-                    color: $Color_Claro2;;
+                .btn:hover{
+                    color: $Color_Claro1;
                 }
             }
         }
@@ -50,17 +45,39 @@
     
     h2{
         .transition_expand{
-            font-family: $Tipografia_texto;
+            display: block;
+            font-family: $Tipografia_titulos;
             color: $Color_Claro2;
-            font-size: 50px;
+            font-size: 80px;
             margin-left: 7%;
             transition: all 2s ease;
         }
         .transition_expand:hover{
-            font-size: 80px;
+            font-size: 120px;
         }
     }
-    .table{
-        margin-left: 7%;
+    .envios{
+        h4{
+            font-family: $Tipografia_texto;
+            font-weight: bold;
+            color: $Color_Oscuro;
+            font-size: 25px;
+            margin-left: 7%;
+        }
+        .parrafo_envios{
+            width: 88%;
+            margin-left: 7%;
+            font-family: $Tipografia_texto;
+            color: $Color_Oscuro;
+            font-size: 20px;
+        }
+        input{
+            
+            padding:5px;
+            margin-left: 7%;
+            border-radius: 20px;
+            border-color: $Color_Oscuro;
+           
+        }
     }
 }
