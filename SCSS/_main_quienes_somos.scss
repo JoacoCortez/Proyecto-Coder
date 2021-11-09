@@ -1,36 +1,53 @@
 .quienes_somos{
-    section{
-        .presentacion{
-            font-family: $Tipografia_titulos;
-            margin-left: 7%;
-            color: $Color_Claro2;
-            font-size: 110px;
+    .fondo_about{
+        @include slider_principal;
+        background-image: url(/img/dsA_2.jpg);
+        .centrados{
+            @include centrados;
         }
-        .parrafos{
-            margin-left: 7%;
+        h6{
+            font-family: $Tipografia_texto;
+            font-size: 30px;
+            font-weight: bold;
+            color: $Color_Oscuro;
+            text-align: center;
+            
+        }
+    }
+    .presentacion{
+        p{
+            margin: $Margin;
             font-family: $Tipografia_texto;
             color: $Color_Oscuro;
             font-size: 20px;
+            line-height: 2;
         }
     }
-    .subtitulos{
-        font-family: $Tipografia_titulos;
-        color: $Color_Oscuro;
-        font-size: 80px;
-        margin-left: 7%;
-    }
-    .videosPresentacion{
-        width: 100%;
-        background-image: url(/img/medialuna.jpg);
+    .perfil{
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        .video{
-            margin: 20px;
+        margin-top: 10%;
+        img{
+            width: 40%;
+            margin-left: 13%;
+            
         }
-    
+        p{
+            width: 30%;
+            padding-left: 5rem;
+            color: $Color_Oscuro;
+            font-family: $Tipografia_texto;
+            font-size: 20px;
+        }
     }
-
+    .muestra{
+        margin-top: 7%;
+        width: 100%;
+        height: 70vh;
+        iframe{
+            width: 100%;
+            height: 70vh;
+        }
+    }
 
 }

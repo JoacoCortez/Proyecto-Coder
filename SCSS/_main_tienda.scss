@@ -1,37 +1,33 @@
 .main_tienda{
+    .fondo_tienda{
+        @include slider_principal;
+        background-image: url(/img/Coffe.jpeg);
+        
+        .centrados{
+           @include centrados;
+        }
+        h6{
+            font-family: $Tipografia_texto;
+            font-size: 30px;
+            font-weight: bold;
+            color: $Color_Oscuro;
+            text-align: center;
+            
+        }
+    }
     .transition_expand{
-        font-family: $Tipografia_titulos;
-        color: $Color_Claro2;
-        font-size: 80px;
-        padding: 15px;
-        margin-left: 7%;
-        transition: all 2s ease;
+        @include expand;
     }
     .transition_expand:hover{
         font-size: 120px;
     }
     .containerCards{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        width: 20% auto;
-        padding: 2%;
-        margin: 20px;
+        @include card_container;
         .card{
-            font-family: $Tipografia_texto;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: stretch;
-            height: 80%;
-            width: 80%;
-            margin: 2%;
-            border: groove 1px black;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            @include card;
             .card-body{
                 color: $Color_Oscuro;
                 font-family: $Tipografia_texto;
-                border: ridge 1px grey;
                 .btn{
                     color: white;
                     background-color: $Color_Oscuro;
@@ -42,42 +38,30 @@
             }
         }
     }
-    
     h2{
-        .transition_expand{
-            display: block;
-            font-family: $Tipografia_titulos;
-            color: $Color_Claro2;
-            font-size: 80px;
-            margin-left: 7%;
-            transition: all 2s ease;
-        }
-        .transition_expand:hover{
-            font-size: 120px;
-        }
+        font-family: $Tipografia_titulos;
+        font-size: 5rem;
+        text-align: center;
+        color: $Color_Claro2;
     }
     .envios{
+        display: inline-block;
+        
         h4{
-            font-family: $Tipografia_texto;
+            @include parrafos;
+            text-align: center;
             font-weight: bold;
-            color: $Color_Oscuro;
-            font-size: 25px;
-            margin-left: 7%;
+            margin: 0%;
         }
         .parrafo_envios{
-            width: 88%;
-            margin-left: 7%;
-            font-family: $Tipografia_texto;
-            color: $Color_Oscuro;
-            font-size: 20px;
-        }
-        input{
+            @include parrafos;
+            text-align: center;
+            margin:0 13% 20px 13%;
             
-            padding:5px;
-            margin-left: 7%;
-            border-radius: 20px;
-            border-color: $Color_Oscuro;
-           
         }
+        .mapa{
+            margin-left: 16%;
+        }
+        
     }
 }

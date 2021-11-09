@@ -1,46 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Tangerine:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+.fondo-home {
+  background-image: url("/img/home.jpg"); }
+
+.fondo-tienda {
+  background-image: url("/img/tienda.jpg"); }
+
+.fondo-about {
+  background-image: url("/img/about.jpg"); }
+
+.fondo-contacto {
+  background-image: url("/img/contacto.jpg"); }
+
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box; }
 
 body {
-  background: #F5E8C7; }
+  background: white; }
 
 header #menu {
-  background-color: #DEBA9D; }
-  header #menu nav .logo {
-    width: 300px;
-    margin-left: 5%; }
-  header #menu nav .menuNav {
-    font-family: "Roboto Slab", serif;
-    font-size: 20px;
-    margin-left: 340px; }
-  header #menu nav .nav-item {
-    width: 30%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 30px; }
-  header #menu nav .nav-link {
-    font-family: "Roboto Slab", serif;
-    font-size: 20px;
-    text-decoration: none;
-    color: #9E7777;
-    padding-right: 20px;
-    transition: all .3s ease; }
-    header #menu nav .nav-link .nav-link:hover {
-      background-color: #F5E8C7;
-      cursor: pointer; }
+  background-color: black;
+  opacity: 0.9; }
+  header #menu nav {
+    height: 90px; }
+    header #menu nav .logo {
+      width: 18%;
+      margin-left: 10%; }
+    header #menu nav .menuNav {
+      font-family: "Poppins", sans-serif;
+      margin-left: 260px; }
+    header #menu nav .nav-item {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 18px; }
+      header #menu nav .nav-item .nav-item:hover {
+        background-color: #F5E8C7;
+        cursor: pointer; }
+    header #menu nav .nav-link {
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      text-decoration: none;
+      color: #9E7777;
+      transition: all .3s ease; }
 
 .main_home .fondo_principal {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100vh;
-  background-image: url(/img/breakfast.jpg);
+  height: 70vh;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(/img/dsB_2.jpg); }
   .main_home .fondo_principal .centrados {
     font-family: "Tangerine", cursive;
     font-size: 100px;
@@ -48,31 +68,26 @@ header #menu {
     text-align: center;
     margin-bottom: 5px; }
   .main_home .fondo_principal h6 {
-    font-family: "Roboto Slab", serif;
+    font-family: "Poppins", sans-serif;
     font-size: 30px;
+    font-weight: bold;
     color: #9E7777;
-    text-align: center;
-    margin: 2px; }
-  .main_home .fondo_principal .parrafos_principal {
-    margin-left: 7%;
-    font-family: "Roboto Slab", serif;
-    color: #9E7777;
-    font-size: 20px;
-    padding-top: 80px;
-    align-items: center; }
+    text-align: center; }
 
-.main_home .parrafos {
-  margin-left: 7%;
-  font-family: "Roboto Slab", serif;
+.main_home section .descripcion {
+  margin: 30px 13% 30px 13%;
+  font-family: "Poppins", sans-serif;
   color: #9E7777;
-  font-size: 20px; }
+  font-size: 20px;
+  line-height: 2; }
 
 .main_home .background_cards h3 {
   font-family: "Tangerine", cursive;
-  font-size: 80px;
+  font-size: 100px;
   color: #DEBA9D;
   text-align: center;
-  margin-bottom: 20px; }
+  margin-bottom: 5px;
+  font-size: 80px; }
 
 .main_home .background_cards .containerCards {
   display: flex;
@@ -80,44 +95,95 @@ header #menu {
   flex-wrap: nowrap;
   width: 20% auto;
   padding: 2%;
-  margin: 20px; }
+  margin: 30px 13% 30px 13%; }
 
 .main_home .background_cards .card {
-  font-family: "Roboto Slab", serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: stretch;
-  height: 80%;
+  height: 60%;
   width: 80%;
   margin: 2%;
-  border: groove 1px black; }
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .main_home .background_cards .card-body {
   color: #9E7777;
-  font-family: "Roboto Slab", serif;
-  border: ridge 1px grey; }
+  font-family: "Poppins", sans-serif; }
+  .main_home .background_cards .card-body .btn {
+    color: white;
+    background-color: #9E7777; }
+  .main_home .background_cards .card-body .btn:hover {
+    color: #F5E8C7; }
 
-.main_home .background_cards .btn {
-  color: white;
-  background-color: #9E7777; }
+.main_home .objetivos {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 13% 30px 13%; }
+  .main_home .objetivos .cards_objetivos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 35%;
+    align-items: center; }
+    .main_home .objetivos .cards_objetivos .icon_container {
+      display: inline-block;
+      align-items: center;
+      background-color: #F5E8C7;
+      color: white;
+      font-size: 50px;
+      border-radius: 80%;
+      padding: 40px 30px 40px 50px;
+      width: 150px;
+      margin: 30px 13% 30px 13%;
+      z-index: 1;
+      transition: background-color .2s ease; }
+      .main_home .objetivos .cards_objetivos .icon_container .icon_container:hover {
+        background-color: yellow; }
+    .main_home .objetivos .cards_objetivos h3 {
+      display: block;
+      color: #9E7777;
+      font-family: "Poppins", sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center; }
+    .main_home .objetivos .cards_objetivos .parrafos {
+      margin: 30px 13% 30px 13%;
+      font-family: "Poppins", sans-serif;
+      color: #9E7777;
+      font-size: 20px;
+      margin-top: 0;
+      text-align: center; }
 
-.main_home .background_cards .btn a {
-  color: #DEBA9D; }
-
-.main_home .objetivos h2 {
-  font-family: "Tangerine", cursive;
-  color: #DEBA9D;
-  font-size: 90px;
-  margin-left: 7%;
-  margin-bottom: 25px; }
+.main_tienda .fondo_tienda {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/Coffe.jpeg); }
+  .main_tienda .fondo_tienda .centrados {
+    font-family: "Tangerine", cursive;
+    font-size: 100px;
+    color: #DEBA9D;
+    text-align: center;
+    margin-bottom: 5px; }
+  .main_tienda .fondo_tienda h6 {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #9E7777;
+    text-align: center; }
 
 .main_tienda .transition_expand {
   font-family: "Tangerine", cursive;
   color: #DEBA9D;
   font-size: 80px;
   padding: 15px;
-  margin-left: 7%;
   transition: all 2s ease; }
 
 .main_tienda .transition_expand:hover {
@@ -129,161 +195,213 @@ header #menu {
   flex-wrap: nowrap;
   width: 20% auto;
   padding: 2%;
-  margin: 20px; }
+  margin: 30px 13% 30px 13%; }
   .main_tienda .containerCards .card {
-    font-family: "Roboto Slab", serif;
+    font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: stretch;
-    height: 80%;
+    height: 60%;
     width: 80%;
     margin: 2%;
-    border: groove 1px black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     .main_tienda .containerCards .card .card-body {
       color: #9E7777;
-      font-family: "Roboto Slab", serif;
-      border: ridge 1px grey; }
+      font-family: "Poppins", sans-serif; }
       .main_tienda .containerCards .card .card-body .btn {
         color: white;
         background-color: #9E7777; }
       .main_tienda .containerCards .card .card-body .btn:hover {
         color: #F5E8C7; }
 
-.main_tienda h2 .transition_expand {
-  display: block;
+.main_tienda h2 {
   font-family: "Tangerine", cursive;
-  color: #DEBA9D;
-  font-size: 80px;
-  margin-left: 7%;
-  transition: all 2s ease; }
+  font-size: 5rem;
+  text-align: center;
+  color: #DEBA9D; }
 
-.main_tienda h2 .transition_expand:hover {
-  font-size: 120px; }
+.main_tienda .envios {
+  display: inline-block; }
+  .main_tienda .envios h4 {
+    margin: 30px 13% 30px 13%;
+    font-family: "Poppins", sans-serif;
+    color: #9E7777;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0%; }
+  .main_tienda .envios .parrafo_envios {
+    margin: 30px 13% 30px 13%;
+    font-family: "Poppins", sans-serif;
+    color: #9E7777;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 13% 20px 13%; }
+  .main_tienda .envios .mapa {
+    margin-left: 16%; }
 
-.main_tienda .envios h4 {
-  font-family: "Roboto Slab", serif;
-  font-weight: bold;
-  color: #9E7777;
-  font-size: 25px;
-  margin-left: 7%; }
-
-.main_tienda .envios .parrafo_envios {
-  width: 88%;
-  margin-left: 7%;
-  font-family: "Roboto Slab", serif;
-  color: #9E7777;
-  font-size: 20px; }
-
-.main_tienda .envios input {
-  padding: 5px;
-  margin-left: 7%;
-  border-radius: 20px;
-  border-color: #9E7777; }
-
-.quienes_somos section .presentacion {
-  font-family: "Tangerine", cursive;
-  margin-left: 7%;
-  color: #DEBA9D;
-  font-size: 110px; }
-
-.quienes_somos section .parrafos {
-  margin-left: 7%;
-  font-family: "Roboto Slab", serif;
-  color: #9E7777;
-  font-size: 20px; }
-
-.quienes_somos .subtitulos {
-  font-family: "Tangerine", cursive;
-  color: #9E7777;
-  font-size: 80px;
-  margin-left: 7%; }
-
-.quienes_somos .videosPresentacion {
+.quienes_somos .fondo_about {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  background-image: url(/img/medialuna.jpg);
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/dsA_2.jpg); }
+  .quienes_somos .fondo_about .centrados {
+    font-family: "Tangerine", cursive;
+    font-size: 100px;
+    color: #DEBA9D;
+    text-align: center;
+    margin-bottom: 5px; }
+  .quienes_somos .fondo_about h6 {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #9E7777;
+    text-align: center; }
+
+.quienes_somos .presentacion p {
+  margin: 30px 13% 30px 13%;
+  font-family: "Poppins", sans-serif;
+  color: #9E7777;
+  font-size: 20px;
+  line-height: 2; }
+
+.quienes_somos .perfil {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around; }
-  .quienes_somos .videosPresentacion .video {
-    margin: 20px; }
+  margin-top: 10%; }
+  .quienes_somos .perfil img {
+    width: 40%;
+    margin-left: 13%; }
+  .quienes_somos .perfil p {
+    width: 30%;
+    padding-left: 5rem;
+    color: #9E7777;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px; }
+
+.quienes_somos .muestra {
+  margin-top: 7%;
+  width: 100%;
+  height: 70vh; }
+  .quienes_somos .muestra iframe {
+    width: 100%;
+    height: 70vh; }
+
+.main_contacto .fondo_contacto {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/breakfast.jpg); }
+  .main_contacto .fondo_contacto .centrados {
+    font-family: "Tangerine", cursive;
+    font-size: 100px;
+    color: #DEBA9D;
+    text-align: center;
+    margin-bottom: 5px; }
+  .main_contacto .fondo_contacto h6 {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #9E7777;
+    text-align: center; }
+
+.main_contacto p {
+  margin: 30px 13% 30px 13%;
+  font-family: "Poppins", sans-serif;
+  color: #9E7777;
+  font-size: 20px; }
 
 .main_contacto .transition_expand {
   font-family: "Tangerine", cursive;
   color: #DEBA9D;
-  font-size: 90px;
-  margin-left: 7%;
-  transition: all 2s ease; }
+  font-size: 80px;
+  padding: 15px;
+  transition: all 2s ease;
+  margin-left: 12%; }
 
 .main_contacto .transition_expand:hover {
   font-size: 120px; }
 
-.main_contacto .contacto fieldset {
-  width: 80%;
-  margin-left: 7%;
-  font-family: "Roboto Slab", serif;
-  color: #9E7777;
-  border: 2px, groove, black; }
+.main_contacto .contacto {
+  width: 100%; }
+  .main_contacto .contacto fieldset {
+    width: 80%;
+    margin: 30px 13% 30px 13%;
+    font-family: "Poppins", sans-serif;
+    color: #9E7777;
+    border: 2px groove black; }
+  .main_contacto .contacto .formulario {
+    padding: 20px; }
 
-.main_contacto .contacto .formulario {
-  padding: 20px; }
-
-footer .background_footer .titulo_footer {
-  font-family: "Roboto Slab", serif;
-  font-size: 24px;
-  color: #9E7777;
-  margin-left: 7%;
-  padding-top: 20px; }
-
-footer .background_footer .texto_footer {
-  font-family: "Roboto Slab", serif;
-  font-size: 18px;
-  color: #9E7777;
-  margin-left: 7%;
-  line-height: 1rem; }
-
-@media only screen and (max-width: 576px) {
-  header #menu nav .logo {
-    width: 30vh;
-    margin-left: 5%; }
-  header #menu nav .menuNav {
-    font-size: 14px;
-    margin-left: 340px; }
-  header #menu nav .nav-item {
-    width: 30%;
+footer {
+  background-color: black; }
+  footer nav {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 30px; }
-  header #menu nav .nav-link {
-    font-family: "Roboto Slab", serif;
-    font-size: 20px;
-    padding-right: 20px;
-    transition: all .3s ease; }
+    align-items: center; }
+    footer nav .mapa_footer {
+      list-style-type: none;
+      margin: 35px 0 0 18%; }
+      footer nav .mapa_footer li {
+        padding-bottom: 10%; }
+        footer nav .mapa_footer li a {
+          font-family: "Poppins", sans-serif;
+          font-size: 20px;
+          text-decoration: none;
+          color: #9E7777; }
+
+@media only screen and (max-width: 1024px) {
+  header #menu nav {
+    max-height: 70px; }
+    header #menu nav .logo {
+      width: 30vh;
+      margin: 0%; }
+    header #menu nav .menuNav {
+      margin: 0; }
+    header #menu nav .nav-item {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 18px; }
+    header #menu nav .nav-link {
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      text-decoration: none;
+      color: #9E7777;
+      transition: all .3s ease; }
   .main_home .fondo_principal {
     width: 100%;
-    height: 10vh;
-    background-image: url(/img/breakfast.jpg);
+    height: 300px;
+    background-image: url(/img/dsB_2.jpg);
     background-repeat: no-repeat;
-    background-size: cover; }
-  .main_home .centrados {
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 30px; }
-  .main_home .subtitulos {
-    font-size: 32px;
-    margin-left: 7%; }
-  .main_home .parrafos {
-    margin-left: 7%;
-    font-size: 10px; }
+    background-size: cover;
+    object-position: center; }
+    .main_home .fondo_principal .centrados {
+      font-size: 70px;
+      margin: 0; }
+    .main_home .fondo_principal h6 {
+      font-size: 25px;
+      text-align: center; }
+  .main_home section .descripcion {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px; }
   .main_home .background_cards h3 {
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 20px; }
+    font-size: 50px; }
   .main_home .background_cards .containerCards {
     display: flex;
     flex-direction: row;
@@ -299,16 +417,24 @@ footer .background_footer .texto_footer {
     height: 80%;
     width: 80%;
     margin: 2%; }
-  .main_home .objetivos h2 {
-    font-size: 32px;
-    margin-left: 7%;
-    margin-bottom: 15px; }
-  .main_tienda .centrados {
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 6%; }
+  .main_home .objetivos {
+    margin: 0;
+    flex-direction: column; }
+    .main_home .objetivos .cards_objetivos {
+      width: 100%;
+      justify-content: center; }
+      .main_home .objetivos .cards_objetivos h3 {
+        font-size: 20px; }
+      .main_home .objetivos .cards_objetivos .parrafos {
+        margin: 0;
+        font-size: 16px; }
+  .main_tienda .fondo_tienda .centrados {
+    font-size: 70px;
+    margin: 0; }
+  .main_tienda .fondo_tienda h6 {
+    font-size: 25px; }
   .main_tienda .transition_expand {
-    font-size: 32px;
+    font-size: 60px;
     margin-left: 7%;
     transition: all 2s ease; }
   .main_tienda .transition_expand:hover {
@@ -329,29 +455,35 @@ footer .background_footer .texto_footer {
       width: 80%;
       margin: 2%;
       border-style: solid 1px black; }
-  .main_tienda h2 .transition_expand {
-    display: block;
-    font-size: 32px;
-    margin-left: 7%;
-    transition: all 2s ease; }
-  .main_tienda h2 .transition_expand:hover {
-    font-size: 44px; }
-  .quienes_somos section .presentacion {
-    margin-left: 7%;
-    font-size: 36px; }
-  .quienes_somos section .parrafos {
-    margin-left: 7%;
-    font-size: 10px; }
-  .quienes_somos .subtitulos {
-    font-size: 32px;
+  .envios h4 {
+    font-size: 22px;
     margin-left: 7%; }
-  .quienes_somos .video {
-    margin: 20px; }
-  .quienes_somos .videosPresentacion {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; }
+  .envios .parrafo_envios {
+    margin-left: 7%;
+    font-size: 18px; }
+  .envios .mapa {
+    margin: 10px 300px 10px 0;
+    max-width: 800px; }
+  .quienes_somos .fondo_about .centrados {
+    font-size: 70px;
+    margin: 0; }
+  .quienes_somos .fondo_about h6 {
+    font-size: 20px; }
+  .quienes_somos .presentacion p {
+    margin-left: 7%;
+    font-size: 18px; }
+  .quienes_somos .perfil img {
+    margin-left: 7%; }
+  .quienes_somos .perfil p {
+    font-size: 18px;
+    padding-left: 30px; }
+  .main_contacto .fondo_contacto .centrados {
+    font-size: 70px; }
+  .main_contacto .fondo_contacto h6 {
+    font-size: 20px; }
+  .main_contacto p {
+    font-size: 18px;
+    margin: 0%; }
   .main_contacto .transition_expand {
     font-size: 32px;
     margin-left: 7%;
@@ -367,85 +499,98 @@ footer .background_footer .texto_footer {
     border-image: initial; }
   .main_contacto .contacto .formulario {
     padding: 20px; }
-  footer {
-    height: 16vh; }
-    footer .background_footer .titulo_footer {
-      font-size: 18px;
-      margin-left: 7%;
-      padding-top: 20px; }
-    footer .background_footer .texto_footer {
-      font-size: 10px;
-      margin-left: 7%;
-      line-height: 1rem; } }
+  footer nav .mapa_footer li a {
+    font-size: 18px; } }
 
-@media only screen and (max-width: 780px) {
-  header #menu nav .logo {
-    width: 30vh;
-    margin-left: 5%; }
-  header #menu nav .menuNav {
-    font-size: 10px;
-    margin-left: 340px; }
-  header #menu nav .nav-item {
-    width: 30%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 30px; }
-  header #menu nav .nav-link {
-    font-family: "Roboto Slab", serif;
-    font-size: 20px;
-    padding-right: 20px;
-    transition: all .3s ease; }
+@media only screen and (max-width: 576px) {
+  header #menu {
+    max-height: 70px; }
+    header #menu nav {
+      height: 70px; }
+      header #menu nav .logo {
+        width: 100px;
+        margin-bottom: 10px; }
+      header #menu nav .menuNav {
+        font-size: 14px;
+        margin: 0; }
+      header #menu nav .nav-item {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 30px; }
+      header #menu nav .nav-link {
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        padding-right: 20px;
+        transition: all .3s ease; }
   .main_home .fondo_principal {
     width: 100%;
-    height: 70vh;
-    background-image: url(/img/breakfast.jpg);
+    height: 200px;
+    background-image: url(/img/dsB_2.jpg);
     background-repeat: no-repeat;
-    background-size: cover; }
-  .main_home .centrados {
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 20px; }
-  .main_home .subtitulos {
-    font-size: 28px;
-    margin-left: 7%; }
-  .main_home .parrafos {
-    margin-left: 7%;
-    font-size: 16px;
-    position: relative; }
+    background-size: cover;
+    object-position: center; }
+    .main_home .fondo_principal .centrados {
+      font-size: 60px;
+      text-align: center;
+      margin-bottom: 0; }
+    .main_home .fondo_principal h6 {
+      font-size: 20px;
+      text-align: center; }
+  .main_home section .descripcion {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    color: #9E7777;
+    text-align: center; }
   .main_home .background_cards h3 {
-    font-size: 32px;
+    font-size: 42px;
     text-align: center;
     margin-bottom: 20px; }
   .main_home .background_cards .containerCards {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 2%;
-    margin: 18px; }
-  .main_home .background_cards .card {
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: auto;
+    padding: 2%;
+    justify-content: center; }
+  .main_home .background_cards .card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     height: 80%;
-    width: 80%;
+    width: 100%;
     margin: 2%; }
-  .main_home .objetivos h2 {
-    font-size: 28px;
-    margin-left: 7%;
-    margin-bottom: 10px; }
-  .main_tienda .centrados {
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 6%; }
+  .main_home .objetivos {
+    margin: 0;
+    flex-direction: column; }
+    .main_home .objetivos .cards_objetivos {
+      flex-direction: row;
+      width: 100%;
+      justify-content: center; }
+      .main_home .objetivos .cards_objetivos h3 {
+        font-size: 20px; }
+      .main_home .objetivos .cards_objetivos .parrafos {
+        margin: 0;
+        font-size: 16px; }
+  .main_tienda .fondo_tienda {
+    object-fit: cover;
+    object-position: 80% 100%; }
+    .main_tienda .fondo_tienda .centrados {
+      font-size: 60px;
+      text-align: center;
+      margin-bottom: 6%; }
+    .main_tienda .fondo_tienda h6 {
+      font-size: 20px; }
   .main_tienda .transition_expand {
-    font-size: 32px;
+    font-size: 42px;
     margin-left: 7%;
     transition: all 2s ease; }
   .main_tienda .transition_expand:hover {
-    font-size: 36px; }
+    font-size: 44px; }
   .main_tienda .containerCards {
     display: flex;
     flex-direction: row;
@@ -461,51 +606,65 @@ footer .background_footer .texto_footer {
       width: 80%;
       margin: 2%;
       border-style: solid 1px black; }
-  .main_tienda h2 .transition_expand {
-    display: block;
-    font-size: 32px;
-    margin-left: 7%;
-    transition: all 2s ease; }
-  .main_tienda h2 .transition_expand:hover {
-    font-size: 44px; }
-  .quienes_somos section .presentacion {
-    margin-left: 7%;
-    font-size: 36px; }
-  .quienes_somos section .parrafos {
-    margin-left: 7%;
-    font-size: 10px; }
-  .quienes_somos .subtitulos {
-    font-size: 32px;
-    margin-left: 7%; }
-  .quienes_somos .video {
-    margin: 20px; }
-  .quienes_somos .videosPresentacion {
+  .main_tienda h2 {
+    font-size: 70px; }
+  .envios h4 {
+    font-size: 16px;
+    margin: 0; }
+  .envios .parrafo_envios {
+    margin: 0;
+    font-size: 13px; }
+  .envios .mapa {
+    margin: 5px 50px 5px 0;
+    max-width: 250px; }
+  .quienes_somos .fondo_about .centrados {
+    font-size: 60px; }
+  .quienes_somos .fondo_about h6 {
+    font-size: 20px; }
+  .quienes_somos .presentacion p {
+    margin-top: 20px;
+    font-size: 13px;
+    word-spacing: 5px; }
+  .quienes_somos .perfil img {
+    margin-right: 20px; }
+  .quienes_somos .perfil p {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; }
+    padding: 0%;
+    font-size: 13px; }
+  .quienes_somos .muestra {
+    height: 80vh; }
+    .quienes_somos .muestra iframe {
+      height: 80vh; }
+  .main_contacto .fondo_contacto .centrados {
+    font-size: 60px; }
+  .main_contacto .fondo_contacto h6 {
+    font-size: 20px; }
+  .main_contacto p {
+    margin-top: 20px;
+    font-size: 13px; }
   .main_contacto .transition_expand {
-    font-size: 32px;
-    margin-left: 7%;
+    font-size: 60px;
+    margin-top: 20px;
+    text-align: center;
     transition: all 2s ease; }
   .main_contacto .transition_expand:hover {
     font-size: 36px; }
   .main_contacto .contacto fieldset {
-    width: 80%;
-    margin-left: 7%;
-    border-width: 2px;
+    width: 100%;
+    margin: 0%;
+    border-width: 1px;
     border-style: groove;
     border-color: black;
     border-image: initial; }
+    .main_contacto .contacto fieldset textarea {
+      width: 90%; }
   .main_contacto .contacto .formulario {
-    padding: 20px; }
+    padding: 10px; }
   footer {
-    height: 16vh; }
-    footer .background_footer .titulo_footer {
-      font-size: 18px;
-      margin-left: 7%;
-      padding-top: 20px; }
-    footer .background_footer .texto_footer {
-      font-size: 10px;
-      margin-left: 7%;
-      line-height: 1rem; } }
+    margin-top: 30px; }
+    footer nav {
+      align-items: flex-end; }
+      footer nav .mapa_footer {
+        margin: 0%; }
+        footer nav .mapa_footer li a {
+          font-size: 13px; } }

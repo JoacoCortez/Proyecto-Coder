@@ -1,38 +1,27 @@
 header{
     #menu{
-        background-color: $Color_Claro2;
+        background-color: black;
+        opacity: 0.9;
         nav{
+            height: 90px;
             .logo{
-                width: 300px;
-                margin-left: 5%;
+                width: 18%;
+                margin-left: 10%;
             }
             .menuNav{
                 font-family: $Tipografia_texto;
-                font-size: 20px;
-                margin-left: 340px;
+                margin-left: 260px;
                 
             }
             .nav-item{
-                width: 30%;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: space-between;
-                align-items: center;
-                padding-right: 30px;
-
-            } 
-            .nav-link{
-                font-family: $Tipografia_texto;
-                font-size: 20px;
-                text-decoration: none;
-                color: $Color_Oscuro;
-                padding-right: 20px;
-                transition: all .3s ease;
-                .nav-link:hover{
+                @include menu_item;
+                .nav-item:hover{
                     background-color: $Color_Claro1;
                     cursor: pointer;
                 }
+            } 
+            .nav-link{
+                @include menu_link;
             }
         }
     }

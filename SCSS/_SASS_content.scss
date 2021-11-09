@@ -1,0 +1,92 @@
+$Color_Claro1: #F5E8C7 ;
+$Color_Claro2: #DEBA9D ;
+$Color_Oscuro: #9E7777 ;
+$Tipografia_texto: 'Poppins', sans-serif;
+$Tipografia_titulos: 'Tangerine', cursive;
+$Margin: 30px 13% 30px 13%;
+
+
+$Slider: home tienda about contacto;
+
+@each $i in $Slider {
+    .fondo-#{$i} { background-image: url('/img/#{$i}.jpg'); }
+}
+@mixin slider_principal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    
+}
+@mixin centrados{
+    font-family: $Tipografia_titulos;
+    font-size: 100px;
+    color: $Color_Claro2;
+    text-align: center;
+    margin-bottom: 5px;
+}
+@mixin card_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 20% auto;
+    padding: 2%;
+    margin: $Margin;
+}
+@mixin card{
+    font-family: $Tipografia_texto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 60%;
+    width: 80%;
+    margin: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@mixin icon{
+    display: inline-block;
+    align-items: center;
+    background-color: $Color_Claro1;
+    color: white;
+    font-size: 50px;
+    border-radius: 80%;
+    padding: 40px 30px 40px 50px;
+    width: 150px;
+    margin: $Margin;
+    z-index: 1;
+}
+@mixin expand{
+    font-family: $Tipografia_titulos;
+    color: $Color_Claro2;
+    font-size: 80px;
+    padding: 15px;
+    transition: all 2s ease;
+}
+@mixin menu_item{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 18px;
+    
+}
+@mixin menu_link{
+    font-family: $Tipografia_texto;
+    font-size: 16px;
+    text-decoration: none;
+    color: $Color_Oscuro;
+    transition: all .3s ease;
+}
+@mixin parrafos{
+    margin: $Margin;
+    font-family: $Tipografia_texto;
+    color: $Color_Oscuro;
+    font-size: 20px;
+}

@@ -1,87 +1,82 @@
 .main_home{
     .fondo_principal{
-        width: 100%;
+        @include slider_principal;
         height: 100vh;
-        background-image: url(/img/breakfast.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: url(/img/dsB_2.jpg);
         .centrados{
-            font-family: $Tipografia_titulos;
-            font-size: 100px;
-            color: $Color_Claro2;
-            text-align: center;
-            margin-bottom: 5px;
+            @include centrados;
         }
         h6{
             font-family: $Tipografia_texto;
             font-size: 30px;
+            font-weight: bold;
             color: $Color_Oscuro;
             text-align: center;
-            margin: 2px;
-        }
-        .parrafos_principal{
-            margin-left: 7%;
-            font-family: $Tipografia_texto;
-            color: $Color_Oscuro;
-            font-size: 20px;
-            padding-top: 80px;
-            align-items: center;
+            
         }
     }
-    .parrafos{
-        margin-left: 7%;
-        font-family: $Tipografia_texto;
-        color: $Color_Oscuro;
-        font-size: 20px;
+    section{
+        .descripcion{
+            @include parrafos;
+            line-height: 2;
+        }
     }
     .background_cards{
         h3{
-            font-family: $Tipografia_titulos;
+            @include centrados;
             font-size: 80px;
-            color: $Color_Claro2;
-            text-align: center;
-            margin-bottom: 20px;
+            
         }
         .containerCards{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            width: 20% auto;
-            padding: 2%;
-            margin: 20px;
+            @include card_container;
         }
         .card{
-            font-family: $Tipografia_texto;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: stretch;
-            height: 80%;
-            width: 80%;
-            margin: 2%;
-            border: groove 1px black;
+           @include card;
         }
         .card-body{
             color: $Color_Oscuro;
             font-family: $Tipografia_texto;
-            border: ridge 1px grey;
-        }
-        .btn{
-            color: white;
-        background-color: $Color_Oscuro;
-        }
-        .btn a{
-            color: $Color_Claro2;;
+            .btn{
+                color: white;
+                background-color: $Color_Oscuro;
+            }
+            .btn:hover{
+                color: $Color_Claro1;
+            }
         }
     }
     .objetivos{
-        h2{
-            font-family: $Tipografia_titulos;
-            color:$Color_Claro2;
-            font-size: 90px;
-            margin-left: 7%;
-            margin-bottom: 25px;
+        display: flex;
+        flex-direction: row;
+        margin: $Margin;
+        .cards_objetivos{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 35%;
+            align-items: center;
+            .icon_container{
+                @include icon;
+                transition: background-color .2s ease;
+                .icon_container:hover{
+                    background-color: yellow;
+                }
+            }
+            h3{
+                display: block;
+                color: $Color_Oscuro;
+                font-family: $Tipografia_texto;
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+            }
+            .parrafos{
+                @include parrafos;
+                margin-top: 0;
+                text-align: center;
+            }
         }
     }
+       
 }  
 

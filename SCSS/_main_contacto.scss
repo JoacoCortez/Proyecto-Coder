@@ -1,21 +1,38 @@
 .main_contacto{
+    .fondo_contacto{
+        @include slider_principal;
+        background-image: url(/img/breakfast.jpg);
+        .centrados{
+            @include centrados;
+        }
+        h6{
+            font-family: $Tipografia_texto;
+            font-size: 30px;
+            font-weight: bold;
+            color: $Color_Oscuro;
+            text-align: center;
+            
+        }
+    }
+    p{
+        @include parrafos;
+    }
+    
     .transition_expand{
-        font-family: $Tipografia_titulos;
-        color: $Color_Claro2;
-        font-size: 90px;
-        margin-left: 7%;
-        transition: all 2s ease;
+        @include expand;
+        margin-left: 12%;
     }
     .transition_expand:hover{
         font-size: 120px;
     }
     .contacto{
+        width: 100%;
         fieldset{
             width: 80%;
-            margin-left: 7%;
+            margin: $Margin;
             font-family: $Tipografia_texto;
             color: $Color_Oscuro;
-            border:2px, groove, black;
+            border: 2px groove black;
         }
         .formulario{
             padding:20px;
