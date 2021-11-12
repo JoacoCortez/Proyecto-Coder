@@ -1,7 +1,7 @@
 .main_contacto{
     .fondo_contacto{
         @include slider_principal;
-        background-image: url(/img/breakfast.jpg);
+        background-image: url('../img/breakfast.jpg');
         .centrados{
             @include centrados;
         }

@@ -8,6 +8,12 @@ header{
                 width: 18%;
                 margin-left: 10%;
             }
+            .navbar-toggler{
+                background-color: $Color_Oscuro;
+                .icon{
+                    background-color: white;
+                }
+            }
             .menuNav{
                 font-family: $Tipografia_texto;
                 margin-left: 260px;

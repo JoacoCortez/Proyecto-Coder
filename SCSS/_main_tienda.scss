@@ -1,7 +1,7 @@
 .main_tienda{
     .fondo_tienda{
         @include slider_principal;
-        background-image: url(/img/Coffe.jpeg);
+        background-image: url('../img/Coffe.jpeg');
         
         .centrados{
            @include centrados;

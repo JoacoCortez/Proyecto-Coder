@@ -28,6 +28,10 @@ header #menu {
     header #menu nav .logo {
       width: 18%;
       margin-left: 10%; }
+    header #menu nav .navbar-toggler {
+      background-color: #9E7777; }
+      header #menu nav .navbar-toggler .icon {
+        background-color: white; }
     header #menu nav .menuNav {
       font-family: "Poppins", sans-serif;
       margin-left: 260px; }
@@ -60,7 +64,7 @@ header #menu {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url(/img/dsB_2.jpg); }
+  background-image: url("../img/dsB_2.jpg"); }
   .main_home .fondo_principal .centrados {
     font-family: "Tangerine", cursive;
     font-size: 100px;
@@ -165,7 +169,7 @@ header #menu {
   background-attachment: fixed;
   justify-content: center;
   align-items: center;
-  background-image: url(/img/Coffe.jpeg); }
+  background-image: url("../img/Coffe.jpeg"); }
   .main_tienda .fondo_tienda .centrados {
     font-family: "Tangerine", cursive;
     font-size: 100px;
@@ -250,7 +254,7 @@ header #menu {
   background-attachment: fixed;
   justify-content: center;
   align-items: center;
-  background-image: url(/img/dsA_2.jpg); }
+  background-image: url("../img/dsA_2.jpg"); }
   .quienes_somos .fondo_about .centrados {
     font-family: "Tangerine", cursive;
     font-size: 100px;
@@ -303,7 +307,7 @@ header #menu {
   background-attachment: fixed;
   justify-content: center;
   align-items: center;
-  background-image: url(/img/breakfast.jpg); }
+  background-image: url("../img/breakfast.jpg"); }
   .main_contacto .fondo_contacto .centrados {
     font-family: "Tangerine", cursive;
     font-size: 100px;
@@ -387,7 +391,7 @@ footer {
   .main_home .fondo_principal {
     width: 100%;
     height: 300px;
-    background-image: url(/img/dsB_2.jpg);
+    background-image: url("../img/dsB_2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     object-position: center; }
@@ -529,7 +533,7 @@ footer {
   .main_home .fondo_principal {
     width: 100%;
     height: 200px;
-    background-image: url(/img/dsB_2.jpg);
+    background-image: url("../img/dsB_2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     object-position: center; }

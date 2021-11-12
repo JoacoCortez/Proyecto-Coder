@@ -1,7 +1,7 @@
 .quienes_somos{
     .fondo_about{
         @include slider_principal;
-        background-image: url(/img/dsA_2.jpg);
+        background-image: url('../img/dsA_2.jpg');
         .centrados{
             @include centrados;
         }

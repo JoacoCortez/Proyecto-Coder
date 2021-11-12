@@ -2,7 +2,7 @@
     .fondo_principal{
         @include slider_principal;
         height: 100vh;
-        background-image: url(/img/dsB_2.jpg);
+        background-image: url('../img/dsB_2.jpg');
         .centrados{
             @include centrados;
         }
