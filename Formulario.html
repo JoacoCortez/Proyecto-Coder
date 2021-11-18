@@ -18,8 +18,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
+    <link rel="icon" href="./img/favicon-32x32.png">
     <script src="https://kit.fontawesome.com/3d7a3ce7c8.js" crossorigin="anonymous"></script>
-    <title>Dulces Sorpresas . Contacto</title>
+    <title>Contacto. Dulces sorpresas</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
@@ -53,52 +54,49 @@
     </header>
     <main class="main_contacto">
         <section class="fondo_contacto">
-            <h1 class="centrados">Titulo llamativo</h1>
-            <h6>Los mejores desayunos, en tu casa</h6>
         </section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quod ipsa hic accusamus, delectus quidem pariatur minima aut impedit doloribus totam a libero, minus dignissimos alias commodi recusandae? Ut aliquam ad nulla molestiae culpa ullam esse, doloremque consequatur voluptate quidem nisi ratione, in impedit illum, vero libero ex quasi optio!</p>
+        <p>Para propuestas o cualquier duda que tengas no dudes en contactarnos con el formulario que dejamos a continuación.</p>
         <h1 class="transition_expand">Contactanos!</h1>
             <section class="contacto">
                 <form class="formulario" action="#">
-                        <fieldset>
-                            <legend>Completá el siguiente formulario</legend>
+                    <fieldset>
+                        <div>
+                            <label for="Nombre"> Escribí tu nombre </label>
+                            <input type="text" name="nombre" placeholder="Tu Nombre">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="Apellido"> Escribí tu apellido</label>
+                            <input type="text" name="apellido" placeholder="Tu apellido">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="Email"> Escribí tu Email</label>
+                            <input type="email" name="Email" placeholder="Tu mail" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="nacionalidad"> Indicá tu nacionalidad</label>
+                            <select name="nacionalidad">
+                                <option value="Argentina"> Argentina</option>
+                                <option value="Uruguay"> Uruguay</option>
+                                <option value="Paraguay"> Paraguay</option>
+                                <option value="Brasil"> Brasil</option>
+                                <option value="Otro"> Otro</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="Notificaciones">¿Desea recibir notificaciones acerca de los productos?</label>
+                            <input type="checkbox" name="Notificaciones">
+                        </div>
+                        <div>
+                            <label for="Comentarios"> ¿Tenés dudas? dejá acá tu comentario y con gusto te ayudamos</label>
+                            <textarea name="Comentarios" rows="6" cols="50"></textarea>
                             <br>
-                                <div>
-                                    <label for="Nombre"> Escribí tu nombre </label>
-                                    <input type="text" name="nombre" placeholder="Tu Nombre">
-                                </div>
-                                <br>
-                                <div>
-                                    <label for="Apellido"> Escribí tu apellido</label>
-                                    <input type="text" name="apellido" placeholder="Tu apellido">
-                                </div>
-                                <br>
-                                <div>
-                                    <label for="Email"> Escribí tu Email</label>
-                                    <input type="email" name="Email" placeholder="Tu mail" required>
-                                </div>
-                                <br>
-                                <div>
-                                    <label for="nacionalidad"> Indicá tu nacionalidad</label>
-                                    <select name="nacionalidad">
-                                        <option value="Argentina"> Argentina</option>
-                                        <option value="Uruguay"> Uruguay</option>
-                                        <option value="Paraguay"> Paraguay</option>
-                                        <option value="Brasil"> Brasil</option>
-                                        <option value="Otro"> Otro</option>
-                                    </select>
-                                </div>
-                                <br>
-                                <div>
-                                    <label for="Notificaciones">¿Desea recibir notificaciones acerca de los productos?</label>
-                                    <input type="checkbox" name="Notificaciones">
-                                </div>
-                                <div>
-                                    <label for="Comentarios"> ¿Tenes dudas? dejá acá tu comentario y con gusto te ayudamos</label>
-                                    <textarea name="Comentarios" rows="6" cols="50"></textarea>
-                                    <input type="reset">
-                                    <input type="submit">
-                                </div>
+                            <input type="reset">
+                            <input type="submit">
+                        </div>
                         </fieldset>
                 </form>
             </section>

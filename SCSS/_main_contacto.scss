@@ -2,17 +2,6 @@
     .fondo_contacto{
         @include slider_principal;
         background-image: url('../img/breakfast.jpg');
-        .centrados{
-            @include centrados;
-        }
-        h6{
-            font-family: $Tipografia_texto;
-            font-size: 30px;
-            font-weight: bold;
-            color: $Color_Oscuro;
-            text-align: center;
-            
-        }
     }
     p{
         @include parrafos;
@@ -32,7 +21,7 @@
             margin: $Margin;
             font-family: $Tipografia_texto;
             color: $Color_Oscuro;
-            border: 2px groove black;
+            border: 1px groove $Color_Oscuro;
         }
         .formulario{
             padding:20px;

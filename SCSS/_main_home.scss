@@ -32,16 +32,20 @@
         }
         .card{
            @include card;
-        }
-        .card-body{
-            color: $Color_Oscuro;
-            font-family: $Tipografia_texto;
-            .btn{
-                color: white;
-                background-color: $Color_Oscuro;
+            img{
+                max-height: 278px;
+                object-fit: cover;
             }
-            .btn:hover{
-                color: $Color_Claro1;
+            .card-body{
+                color: $Color_Oscuro;
+                font-family: $Tipografia_texto;
+                .btn{
+                    color: white;
+                    background-color: $Color_Oscuro;
+                }
+                .btn:hover{
+                    color: $Color_Claro1;
+                }
             }
         }
     }

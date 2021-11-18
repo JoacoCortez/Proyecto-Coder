@@ -97,7 +97,7 @@ header #menu {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 20% auto;
+  max-width: 1080px;
   padding: 2%;
   margin: 30px 13% 30px 13%; }
 
@@ -106,19 +106,21 @@ header #menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 60%;
-  width: 80%;
+  width: 275px;
+  height: 500px;
   margin: 2%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-
-.main_home .background_cards .card-body {
-  color: #9E7777;
-  font-family: "Poppins", sans-serif; }
-  .main_home .background_cards .card-body .btn {
-    color: white;
-    background-color: #9E7777; }
-  .main_home .background_cards .card-body .btn:hover {
-    color: #F5E8C7; }
+  .main_home .background_cards .card img {
+    max-height: 278px;
+    object-fit: cover; }
+  .main_home .background_cards .card .card-body {
+    color: #9E7777;
+    font-family: "Poppins", sans-serif; }
+    .main_home .background_cards .card .card-body .btn {
+      color: white;
+      background-color: #9E7777; }
+    .main_home .background_cards .card .card-body .btn:hover {
+      color: #F5E8C7; }
 
 .main_home .objetivos {
   display: flex;
@@ -197,7 +199,7 @@ header #menu {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 20% auto;
+  max-width: 1080px;
   padding: 2%;
   margin: 30px 13% 30px 13%; }
   .main_tienda .containerCards .card {
@@ -205,10 +207,13 @@ header #menu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 60%;
-    width: 80%;
+    width: 275px;
+    height: 500px;
     margin: 2%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .main_tienda .containerCards .card img {
+      max-height: 278px;
+      object-fit: cover; }
     .main_tienda .containerCards .card .card-body {
       color: #9E7777;
       font-family: "Poppins", sans-serif; }
@@ -240,9 +245,9 @@ header #menu {
     color: #9E7777;
     font-size: 20px;
     text-align: center;
-    margin: 0 13% 20px 13%; }
+    margin: 0 13% 35px 13%; }
   .main_tienda .envios .mapa {
-    margin-left: 16%; }
+    margin: 0 0 30px 16%; }
 
 .quienes_somos .fondo_about {
   display: flex;
@@ -285,6 +290,7 @@ header #menu {
   .quienes_somos .perfil p {
     width: 30%;
     padding-left: 5rem;
+    line-height: 2.2;
     color: #9E7777;
     font-family: "Poppins", sans-serif;
     font-size: 20px; }
@@ -308,18 +314,6 @@ header #menu {
   justify-content: center;
   align-items: center;
   background-image: url("../img/breakfast.jpg"); }
-  .main_contacto .fondo_contacto .centrados {
-    font-family: "Tangerine", cursive;
-    font-size: 100px;
-    color: #DEBA9D;
-    text-align: center;
-    margin-bottom: 5px; }
-  .main_contacto .fondo_contacto h6 {
-    font-family: "Poppins", sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: #9E7777;
-    text-align: center; }
 
 .main_contacto p {
   margin: 30px 13% 30px 13%;
@@ -345,7 +339,7 @@ header #menu {
     margin: 30px 13% 30px 13%;
     font-family: "Poppins", sans-serif;
     color: #9E7777;
-    border: 2px groove black; }
+    border: 1px groove #9E7777; }
   .main_contacto .contacto .formulario {
     padding: 20px; }
 
@@ -512,11 +506,16 @@ footer {
     header #menu nav {
       height: 70px; }
       header #menu nav .logo {
-        width: 100px;
+        max-height: 80px;
+        width: 150px;
         margin-bottom: 10px; }
+      header #menu nav .navbar-toggler {
+        width: auto;
+        margin: 2px 50px 20px 5px; }
       header #menu nav .menuNav {
         font-size: 14px;
-        margin: 0; }
+        margin: 0;
+        background-color: #DEBA9D; }
       header #menu nav .nav-item {
         width: 30%;
         display: flex;
@@ -534,9 +533,7 @@ footer {
     width: 100%;
     height: 200px;
     background-image: url("../img/dsB_2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-position: center; }
+    background-repeat: no-repeat; }
     .main_home .fondo_principal .centrados {
       font-size: 60px;
       text-align: center;
@@ -581,8 +578,7 @@ footer {
         margin: 0;
         font-size: 16px; }
   .main_tienda .fondo_tienda {
-    object-fit: cover;
-    object-position: 80% 100%; }
+    background-position: 30% 50%; }
     .main_tienda .fondo_tienda .centrados {
       font-size: 60px;
       text-align: center;
@@ -621,10 +617,12 @@ footer {
   .envios .mapa {
     margin: 5px 50px 5px 0;
     max-width: 250px; }
-  .quienes_somos .fondo_about .centrados {
-    font-size: 60px; }
-  .quienes_somos .fondo_about h6 {
-    font-size: 20px; }
+  .quienes_somos .fondo_about {
+    background-position: right; }
+    .quienes_somos .fondo_about .centrados {
+      font-size: 60px; }
+    .quienes_somos .fondo_about h6 {
+      font-size: 20px; }
   .quienes_somos .presentacion p {
     margin-top: 20px;
     font-size: 13px;

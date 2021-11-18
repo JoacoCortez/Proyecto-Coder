@@ -25,9 +25,15 @@
         @include card_container;
         .card{
             @include card;
+            img{
+                max-height: 278px;
+                object-fit: cover;
+            }
             .card-body{
                 color: $Color_Oscuro;
                 font-family: $Tipografia_texto;
+                
+
                 .btn{
                     color: white;
                     background-color: $Color_Oscuro;
@@ -56,11 +62,11 @@
         .parrafo_envios{
             @include parrafos;
             text-align: center;
-            margin:0 13% 20px 13%;
+            margin:0 13% 35px 13%;
             
         }
         .mapa{
-            margin-left: 16%;
+            margin: 0 0 30px 16%;
         }
         
     }

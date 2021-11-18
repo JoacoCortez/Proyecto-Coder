@@ -27,6 +27,7 @@
         display: flex;
         flex-direction: row;
         margin-top: 10%;
+        
         img{
             width: 40%;
             margin-left: 13%;
@@ -35,6 +36,7 @@
         p{
             width: 30%;
             padding-left: 5rem;
+            line-height: 2.2;
             color: $Color_Oscuro;
             font-family: $Tipografia_texto;
             font-size: 20px;

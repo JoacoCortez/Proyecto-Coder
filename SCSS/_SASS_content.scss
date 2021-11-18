@@ -34,7 +34,7 @@ $Slider: home tienda about contacto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 20% auto;
+    max-width: 1080px;
     padding: 2%;
     margin: $Margin;
 }
@@ -43,8 +43,8 @@ $Slider: home tienda about contacto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 60%;
-    width: 80%;
+    width: 275px;
+    height: 500px;
     margin: 2%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

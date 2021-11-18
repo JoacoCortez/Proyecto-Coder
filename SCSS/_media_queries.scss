@@ -238,14 +238,21 @@
             nav{
                 height: 70px;
                 .logo{
-                    
-                    width: 100px;
+                    max-height: 80px;
+                    width: 150px;
                     margin-bottom: 10px;
+                }
+                .navbar-toggler{
+                    width: auto;
+                    margin: 2px 50px 20px 5px;
+                    .icon{
+                      
+                    }
                 }
                 .menuNav{
                     font-size: 14px;
                     margin: 0;
-                    
+                    background-color: $Color_Claro2;
                 }
                 .nav-item{
                     width: 30%;
@@ -272,8 +279,7 @@
             height: 200px;
             background-image: url('../img/dsB_2.jpg');
             background-repeat: no-repeat;
-            background-size: cover;
-            object-position: center;
+            
         
             .centrados{
                 font-size: 60px;
@@ -336,9 +342,7 @@
     }  
     .main_tienda{
         .fondo_tienda{
-            object-fit: cover;
-            object-position: 80% 100%;
-        
+           background-position: 30% 50%;
             .centrados{
                 font-size: 60px;
                 text-align: center;
@@ -399,6 +403,7 @@
     }
     .quienes_somos{
         .fondo_about{
+           background-position: right;
             .centrados{
                 font-size: 60px;
             }
@@ -438,6 +443,7 @@
     }
     .main_contacto{
         .fondo_contacto{
+            
             .centrados{
                 font-size: 60px;
 
